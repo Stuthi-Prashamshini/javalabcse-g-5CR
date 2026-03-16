@@ -938,5 +938,5 @@ class Calculate {
     }
 }
 ```
-![output for 8c]()
+![output for 8c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/bbc6fa92c5e28a4461ed7c4be4792427789b674f/8c.png)
 
