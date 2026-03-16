@@ -273,6 +273,5 @@ class Main {
     }
 }
 ```
-
-![output for 3c]()
+![output for 3c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/548b5c55227a542c469bc4d1206f197dfa2219f8/3c.png)
 
