@@ -586,7 +586,7 @@ class MultipleCatchDemo {
         System.out.println("Program continues...");
     }
 ```
-![output for 6b]()
+![output for 6b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/dbde027cd35fb41204cc68dec994cde3630dfe12/6b.png)
 
 ## Title:6c(Implementing java built-in exception)
 ```
