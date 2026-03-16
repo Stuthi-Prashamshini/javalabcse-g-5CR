@@ -547,7 +547,7 @@ class ArrayIndexExceptionDemo {
     }
 }
 ```
-![output for 6a]()
+![output for 6a](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/24342edca165931deec7638323055260580f08df/6a.png)
 
 ## Title:6b(Implement Multiple catch Blocks)
 ```
