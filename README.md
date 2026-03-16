@@ -143,7 +143,7 @@ class main{
 ```
 ![output for 2c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/62a5e2e867e753972a7a24f8274a9eaac26f0c28/2c.png)
 
-## Experiment 3
+km,,
 ## Title:3a(Implement Constructor Overload)
 ```
 class student{
@@ -275,3 +275,139 @@ class Main {
 ```
 ![output for 3c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/548b5c55227a542c469bc4d1206f197dfa2219f8/3c.png)
 
+## Experiment 4
+## Tilte:4a(Implement Single Inheritence)
+```
+class Person {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void displayPersonDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+class Employee extends Person {
+    double annualSalary;
+    int yearOfJoining;
+    String nationalInsuranceNumber;
+
+    Employee(String name, int age, double salary, int year, String nin) {
+        super(name, age);
+        annualSalary = salary;
+        yearOfJoining = year;
+        nationalInsuranceNumber = nin;
+    }
+
+    void displayEmployeeDetails() {
+        displayPersonDetails();
+        System.out.println("Annual Salary: " + annualSalary);
+        System.out.println("Year of Joining: " + yearOfJoining);
+        System.out.println("National Insurance Number: " + nationalInsuranceNumber);
+    }
+}
+
+public class TestEmployee {
+    public static void main(String[] args) {
+        Employee emp = new Employee("sree", 19, 60000, 2022, "NJ123456A");
+        emp.displayEmployeeDetails();
+    }
+}
+```
+![output for 4a]()
+
+## Title:4b(Implement multi level inheritence)
+```
+class Bicycle {
+    String pedalType;
+
+    void showBicycleInfo() {
+        System.out.println("This is a bicycle with pedals");
+        System.out.println("Pedal Type: " + pedalType);
+    }
+}
+
+class Motorbike extends Bicycle {
+    int engineCapacity;
+
+    void showMotorbikeInfo() {
+        System.out.println("This motorbike has an engine");
+        System.out.println("Engine Capacity: " + engineCapacity + " cc");
+    }
+}
+
+class ElectricBike extends Motorbike {
+    int batteryCapacity;
+
+    void showElectricBikeInfo() {
+        System.out.println("This electric bike has an electric motor & battery");
+        System.out.println("Battery Capacity: " + batteryCapacity + " Wh");
+    }
+}
+
+public class TestVehicle {
+    public static void main(String[] args) {
+        ElectricBike eBike = new ElectricBike();
+
+        eBike.pedalType = "Standard Pedals";
+        eBike.engineCapacity = 250;
+        eBike.batteryCapacity = 500;
+
+        eBike.showBicycleInfo();
+        eBike.showMotorbikeInfo();
+        eBike.showElectricBikeInfo();
+    }
+}
+```
+![output for 4b]()
+
+## Title:4c(Implement Abstract Class)
+```
+abstract class Figure {
+    double dim1, dim2;
+
+    Figure(double d1, double d2) {
+        dim1 = d1;
+        dim2 = d2;
+    }
+
+    abstract double area();
+}
+
+class Rectangle extends Figure {
+    Rectangle(double length, double breadth) {
+        super(length, breadth);
+    }
+
+    double area() {
+        return dim1 * dim2;
+    }
+}
+
+class Triangle extends Figure {
+    Triangle(double base, double height) {
+        super(base, height);
+    }
+
+    double area() {
+        return 0.5 * dim1 * dim2;
+    }
+}
+
+public class TestFigure {
+    public static void main(String[] args) {
+        Figure f1 = new Rectangle(23.4, 14.5);
+        Figure f2 = new Triangle(12.3, 15.6);
+
+        System.out.println("Area of Rectangle = " + f1.area());
+        System.out.println("Area of Triangle = " + f2.area());
+    }
+}
+```
+![output for 4c]()
