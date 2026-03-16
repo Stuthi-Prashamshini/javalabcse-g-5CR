@@ -25,4 +25,4 @@ class DefaultPrimitiveType {
     }
 }
 ```
-![output for 1a]()
+![output for 1a](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/4fdc93f418e3ddbd5094a17435fd897662fde306/1a.png)
