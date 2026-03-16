@@ -757,7 +757,7 @@ public class ThreadDemo {
     }
 }
 ```
-![output for 7c]()
+![output for 7c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/e012610a7ffc676e15224c261e5755825f0ea42b/7c.png)
 
 
 ## Experiment 8
