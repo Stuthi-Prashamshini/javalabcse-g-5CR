@@ -904,7 +904,7 @@ public class ProducerConsumerDemo {
     }
 }
 ```
-![output for 8b]()
+![output for 8b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/cae42105d52d0e11e29ab875cca3ce71a14384c8/8b.png)
 
 ## Title:8c(Import and use the user defined packages)
 ```
