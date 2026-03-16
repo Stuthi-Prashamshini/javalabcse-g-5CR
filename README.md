@@ -65,3 +65,82 @@ class Quadraticequation{
    }
 ```
 ![output for 1b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/16af76343d5b2c6a21b3818c405dc880571e320d/1b.png)
+
+## Experiment 2
+## Title:2a(Implement class mechanism)
+```
+class Rectangle{
+  double l;
+  double b;
+  double area(){
+    return l*b;
+  }
+  double perimeter(){
+   return 2*(l+b);
+   }
+ }
+class main{
+  public static void main(String args[]){
+    Rectangle rect =new Rectangle();
+    rect.l=6;
+    rect.b=12;
+    double area = rect.area();
+    double perimeter =rect.perimeter();
+    System.out.println("area is:" +area);
+    System.out.println("perimeter is:" +perimeter);
+    }
+  }
+```
+![output for 2a]()
+
+## Title:2b(Implementing overloading method)
+```
+class sum{
+  int sum(int a ,int b){
+    return a+b;
+  }
+  int sum(int a ,int b,int c){
+  return a+b+c;
+  }
+  double sum(double a ,double b){
+   return a+b;
+  }
+}
+class main{
+ public static void main(String args[]){
+   sum s= new sum();
+   System.out.println("sum of 2 integers:"+s.sum(20,16));
+   System.out.println("sum of 3 integers:"+s.sum(20,16,17));
+   System.out.println("sum of two real numbers:"+s.sum(30.465,15.675));
+  }
+}
+```
+![output for 2b]()
+
+## Title:2c(Implement Constructor)
+```
+class student{
+ String sname;
+ int sage;
+ double smarks;
+ student(String name,int age,double marks){
+   sname=name;
+   sage=age;
+   smarks=marks;
+  }
+ void display(){
+  System.out.println("student name is :"+sname);
+  System.out.println("student age is :"+sage);
+  System.out.println("stduent marks is:"+smarks);
+  }
+}
+class main{
+ public static void main(String args[]){
+  student std= new student("sree",12,960);
+  std.display();
+  }
+}
+```
+![output for 2c]()
+
+
