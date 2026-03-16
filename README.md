@@ -143,4 +143,136 @@ class main{
 ```
 ![output for 2c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/62a5e2e867e753972a7a24f8274a9eaac26f0c28/2c.png)
 
+## Experiment 3
+## Title:3a(Implement Constructor Overload)
+```
+class student{
+ String name;
+ int age;
+ double marks;
+ student(){
+ }
+ student(String name,int age,double marks){
+  this.name=name;
+  this.age=age;
+  this.marks=marks;
+}
+void display(){
+  System.out.println("name:"+name);
+  System.out.println("age:"+age);
+  System.out.println("marks:"+marks);
+  }
+}
+
+class main{
+ public static void main(String args[]){
+   student std= new student();
+   std.display();
+   student std1=new student ("sree",19,60);
+   std1.display();
+ }
+}
+```
+![output for 3a]()
+
+## Title:3b(Implement Binary Search)
+```
+import java.util.Scanner;
+class Binary {
+    int list[];
+    int size;
+    Binary(int size) {
+        this.size = size;
+        list = new int[size];
+    }
+    void setList() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter items in ascending order:");
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter value of " + (i + 1) + ":");
+            list[i] = sc.nextInt();
+        }
+    }
+    void getList() {
+        System.out.println("List elements:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(list[i] + " ");
+        }
+        System.out.println();
+    }
+    int binary(int key) {
+        int low = 0;
+        int high = size - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (list[mid] == key)
+                return mid;
+            else if (list[mid] < key)
+                low = mid + 1;
+            else
+                high = mid - 1;
+        }
+        return -1;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of list:");
+        int size = sc.nextInt();
+        Binary b = new Binary(size);
+        b.setList();
+        b.getList();
+        System.out.println("Enter a key to search:");
+        int key = sc.nextInt();
+        int index = b.binary(key);
+        if (index == -1) {
+            System.out.println("Key item does not exist");
+        } else {
+            System.out.println("Key item exists at position: " + (index + 1));
+        }
+    }
+}
+```
+
+![output for 3b]()
+
+## Title:3c(Implement Bubble sort)
+```
+class BubbleSort {
+    BubbleSort(int arr[]) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+
+            }
+        }
+    }
+}
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of array:");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        new BubbleSort(arr);
+        System.out.println("Sorted array:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+```
+
+![output for 3c]()
 
