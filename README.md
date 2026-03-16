@@ -660,7 +660,7 @@ class UserRegion {
     }
 }
 ```
-![output for 7a]()
+![output for 7a](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/9214c97fb15f1ce5d6534d699cd77b4839f5bfcc/7a.png)
 
 ## Title:7b(Creating threads by extending thread class)
 ```
