@@ -320,7 +320,7 @@ public class TestEmployee {
     }
 }
 ```
-![output for 4a]()
+![output for 4a](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/75e0fb8630804bbf5720831b1cef127d34577ace/4a.png)
 
 ## Title:4b(Implement multi level inheritence)
 ```
