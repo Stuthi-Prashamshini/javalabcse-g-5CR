@@ -411,3 +411,215 @@ public class TestFigure {
 }
 ```
 ![output for 4c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/f73688e42840c8b1d7a548b37c3d6f4ad423a2ad/4c.png)
+
+## Experiment 5
+## Title:5a(Implementing Interface)
+```
+interface Sortable{
+  void sort(int [] arr);
+  }
+class Bubblesort implements Sortable{
+  public void sort(int [] arr){
+   int size =arr.length;
+   int temp=0;
+   for(int i=0;i<size-1;i++){
+    for(int j=0;j<size-i-1;j++){
+      if(arr[j]>arr[j+1]){
+         temp=arr[j];
+         arr[j]=arr[i];
+         arr[i]=temp;
+          }
+       }
+     }
+  }
+}
+class Selectionsort implements Sortable {
+   public void sort (int [] arr){
+    int size=arr.length;
+    int minindex=0;
+    int min;
+    for(int i=0;i<size;i++){
+      min =arr[i];
+     for(int j=i+1;j<size;j++){
+       if(min>arr[j]){
+          min=arr[j];
+          minindex=j;
+         }
+       }
+     arr[i]=min;
+    }
+   }
+ }
+class Testsort {
+    static void display(int arr[]) {
+        for (int ele : arr) {
+            System.out.print(ele + ", ");
+        }
+        System.out.println();
+    }
+    public static void main(String args[]) {
+        int arr1[] = {9, 7, 4, 3, 6, 8};
+        int arr2[] = {8, 6, 3, 4, 7, 9};
+        Sortable s;
+        s = new Bubblesort();
+        s.sort(arr1);
+        System.out.println("After Bubble Sort:");
+        display(arr1);
+
+        s = new Selectionsort();
+        s.sort(arr2);
+        System.out.println("After Selection Sort:");
+        display(arr2);
+    }
+}
+```
+![output for 5a]()
+
+## Title:5b(Polymorphism)
+```
+class Vehicle{
+    void run(){
+          System.out.println(" vechicle is running:");
+     }
+  }
+class car extends Vehicle{
+    void run(){
+           System.out.println("car is running :");
+      }
+  }
+class bike extends Vehicle{
+     void run(){
+       System.out.println("bike is running:");
+    }
+  }
+class TestVehicle{
+   public static void main(String args[]){
+     Vehicle v ;
+     v=new car();
+     v.run();
+     v=new bike();
+     v.run();
+     v=new Vehicle();
+     v.run();
+    }
+}
+```
+![output for 5b]()
+
+## Title:5c(Implementing String Buffer)
+```
+class Deletechar{
+  public static void main(String args[]){
+    StringBuffer sb =new StringBuffer("java programming");
+    System.out.println(sb);
+    sb.deleteCharAt(4);
+    System.out.println(sb);
+    sb.delete(0,4);
+    System.out.println(sb);
+
+   }
+}
+```
+![output for 5c]()
+
+## Experiment 6
+## Title:6a(Exception Handling)
+```
+import java.util.Scanner;
+class ArrayIndexExceptionDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        try {
+            System.out.print("Enter index to access: ");
+            int index = sc.nextInt();
+            System.out.println("Element at index " + index + " is " + arr[index]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index out of bounds!");
+        }
+        sc.close();
+    }
+}
+```
+![output for 6a]()
+
+## Title:6b(Implement Multiple catch Blocks)
+```
+import java.util.Scanner;
+
+class MultipleCatchDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {10, 20, 30, 40, 50};
+
+        try {
+            System.out.print("Enter first number: ");
+            int a = sc.nextInt();
+
+            System.out.print("Enter second number: ");
+            int b = sc.nextInt();
+
+            int result = a / b;
+            System.out.println("Result = " + result);
+
+            System.out.print("Enter index to access array: ");
+            int index = sc.nextInt();
+            System.out.println("Element = " + arr[index]);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception occurred");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out Of Bounds Exception occurred");
+        }
+        catch (Exception e) {
+            System.out.println("Some other exception occurred");
+        }
+
+        sc.close();
+        System.out.println("Program continues...");
+    }
+```
+![output for 6b]()
+
+## Title:6c(Implementing java built-in exception)
+```
+import java.util.Scanner;
+
+class BuiltInException {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            System.out.print("Enter a number to divide 100: ");
+            int n = sc.nextInt();
+
+            int result = 100 / n;
+            System.out.println("Result = " + result);
+
+            int[] arr = new int[3];
+            System.out.println(arr[5]);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception occurred");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out Of Bounds Exception occurred");
+        }
+        catch (Exception e) {
+            System.out.println("General Exception occured");
+        }
+       finally{
+           System.out.println("Program execution continue...");
+           sc.close();
+       }
+   }
+}
+```
+![output for 6c]()
