@@ -141,6 +141,6 @@ class main{
   }
 }
 ```
-![output for 2c]()
+![output for 2c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/62a5e2e867e753972a7a24f8274a9eaac26f0c28/2c.png)
 
 
