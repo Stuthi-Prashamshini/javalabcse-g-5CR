@@ -520,7 +520,7 @@ class Deletechar{
    }
 }
 ```
-![output for 5c]()
+![output for 5c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/3dfddaacf7192d16dc57e1fc1a356f753be32cda/5c.png)
 
 ## Experiment 6
 ## Title:6a(Exception Handling)
