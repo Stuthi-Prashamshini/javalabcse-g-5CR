@@ -800,7 +800,7 @@ class TestDaemon{
 }
 ```
 
-![output for 8a]()
+![output for 8a](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/a009efa5c525f671fba485454c47f0a65d768653/8a.png)
 
 ## Title:8b(Producer Consumer problem )
 ```
