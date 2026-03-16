@@ -115,7 +115,7 @@ class main{
   }
 }
 ```
-![output for 2b]()
+![output for 2b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/562fa4c2864ab4efd309ffa8e8e188f09cd7fa06/2b.png)
 
 ## Title:2c(Implement Constructor)
 ```
