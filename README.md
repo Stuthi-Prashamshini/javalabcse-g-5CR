@@ -473,7 +473,7 @@ class Testsort {
     }
 }
 ```
-![output for 5a]()
+![output for 5a](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/b282175fa555fdc25c66eaca4fefa05d21c5f817/5a.png)
 
 ## Title:5b(Polymorphism)
 ```
