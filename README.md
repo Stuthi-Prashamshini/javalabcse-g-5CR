@@ -365,7 +365,7 @@ public class TestVehicle {
     }
 }
 ```
-![output for 4b]()
+![output for 4b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/08b8ff6cf92d5abf6607b515647e342156d67f31/4b.png)
 
 ## Title:4c(Implement Abstract Class)
 ```
