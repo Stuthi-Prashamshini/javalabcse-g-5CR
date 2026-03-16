@@ -504,7 +504,7 @@ class TestVehicle{
     }
 }
 ```
-![output for 5b]()
+![output for 5b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/212c507d046c74f77ce5883592632965f52f3bb2/5b.png)
 
 ## Title:5c(Implementing String Buffer)
 ```
