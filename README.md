@@ -622,4 +622,4 @@ class BuiltInException {
    }
 }
 ```
-![output for 6c]()
+![output for 6c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/fdc43fba010fb911d1fc0fb359e58d2f2616ca0a/6c.png)
