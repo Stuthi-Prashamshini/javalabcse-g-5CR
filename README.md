@@ -173,7 +173,7 @@ class main{
  }
 }
 ```
-![output for 3a]()
+![output for 3a](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/b54621fca30c3a18d3d3891c3504c9e6f0a47b83/3a.png)
 
 ## Title:3b(Implement Binary Search)
 ```
