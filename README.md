@@ -410,4 +410,4 @@ public class TestFigure {
     }
 }
 ```
-![output for 4c]()
+![output for 4c](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/f73688e42840c8b1d7a548b37c3d6f4ad423a2ad/4c.png)
