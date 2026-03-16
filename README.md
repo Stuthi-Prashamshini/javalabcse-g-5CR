@@ -91,7 +91,7 @@ class main{
     }
   }
 ```
-![output for 2a]()
+![output for 2a](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/552e8ea713a0ffd4e288bacd4f91549307b969ee/2a.png)
 
 ## Title:2b(Implementing overloading method)
 ```
