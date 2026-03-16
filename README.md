@@ -715,7 +715,7 @@ class GoodMorningThread extends Thread {
            }
          }
 ```
-![output for 7b]()
+![output for 7b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/9bc0f27f075ac079193842ec41fc09db0105e7ed/7b.png)
 
 ## Title:7c(Illustrating isAlive() and join())
 ```
