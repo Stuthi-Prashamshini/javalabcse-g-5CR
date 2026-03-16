@@ -235,7 +235,7 @@ class Main {
 }
 ```
 
-![output for 3b]()
+![output for 3b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/e8dfc2fd6a582869ed15f865057d4ea1a9b46171/3b.png)
 
 ## Title:3c(Implement Bubble sort)
 ```
