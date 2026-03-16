@@ -64,4 +64,4 @@ class Quadraticequation{
         }
    }
 ```
-![output for 1b]()
+![output for 1b](https://github.com/Stuthi-Prashamshini/javalabcse-g-5CR/blob/16af76343d5b2c6a21b3818c405dc880571e320d/1b.png)
